@@ -1,0 +1,14 @@
+.bgImage {
+  height: 50vh; /* Full screen height */
+  background-size: cover; /* Make the image cover the whole div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  width: 100%;
+  color: white;
+  font-size: 20px;
+}
+
+.button {
+  color: black;
+  background-color: white;
+}

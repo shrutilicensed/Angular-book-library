@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+<div>
+  <div [style.backgroundImage]="'url(' + imageUrl + ')'" class="bgImage">
+    <div class="description">
+      {{ description }}
+    </div>
+    <button class="button" (click)="onExplore()">Explore Categories</button>
+  </div>
+</div>

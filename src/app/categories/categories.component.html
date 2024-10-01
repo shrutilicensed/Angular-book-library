@@ -1,0 +1,17 @@
+<h1>Browse Categories</h1>
+<select [(ngModel)]="selectedCategory" (ngModelChange)="onSelectCategory()">
+  <option value="" disabled selected>Select a Category</option>
+  <option *ngFor="let category of allCategories" [ngValue]="category">
+    {{ category.name }}
+  </option>
+</select>
+<div *ngIf="selectedCategory">
+  <h3>{{ selectedCategory.name }}</h3>
+  <div class="flex">
+    <img [src]="selectedCategory.image" />
+    <div>
+      <p>{{ selectedCategory.description }}</p>
+      <button (click)="viewMore()">View More..</button>
+    </div>
+  </div>
+</div>
